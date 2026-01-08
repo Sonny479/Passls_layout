@@ -1,0 +1,8 @@
+<svg id="btn_menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="사각형_9391" data-name="사각형 9391" width="24" height="24" fill="rgba(255,255,255,0)"/>
+  <g id="그룹_13620" data-name="그룹 13620" transform="translate(3.683 6.576)">
+    <line id="선_642" data-name="선 642" x2="16.635" fill="none" stroke="#a4a4a5" stroke-width="1.5"/>
+    <line id="선_643" data-name="선 643" x2="16.635" transform="translate(0 5.425)" fill="none" stroke="#a4a4a5" stroke-width="1.5"/>
+    <line id="선_644" data-name="선 644" x2="16.635" transform="translate(0 10.849)" fill="none" stroke="#a4a4a5" stroke-width="1.5"/>
+  </g>
+</svg>
