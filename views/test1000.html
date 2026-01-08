@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>랜딩 테스트 페이지</title>
+  <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+<body style="margin: 0px; font-family: Noto Sans KR;">
+  <main>
+    <section>
+      <div class="card">
+        <img src="/assets/images/t_img_main.png">
+        <button type="button">
+          <p class="card-text" id="card-text">열심히 설명하는 선생님</p>
+        </button>
+        <a href="/views/test2000.html">2000으로 이동</a>
+        <div class="content1">
+          <p>콘텐츠1 여기 있습니다</p>
+          <div class="content2">
+            <p>콘텐츠2 여기 있습니다</p>
+            <div class="toss-modal">
+              <p>토스 페이먼트 이미지</p>
+              <p>토스 페이먼트 이미지</p>
+              <p>토스 페이먼트 이미지</p>
+              <p>토스 페이먼트 이미지</p>
+              <p>토스 페이먼트 이미지</p>
+              <p>토스 페이먼트 이미지</p>
+              <p>토스 페이먼트 이미지</p>
+              <p>토스 페이먼트 이미지</p>
+              <button type="button" class="agree-btn">약관버튼</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <script>
+    function App() {
+      const [message, setMessage] = useState('안녕하세요');
+      const [color, setColor] = useState('black');
+
+      const handleClick = () => {
+        setMessage('버튼을 클릭했습니다!');
+        setColor('red');
+      }
+
+      return (
+        <div>
+          <button onClick={handleClick}>click here</button>
+          <div></div>
+        </div>
+      )
+    }
+  </script>  
+
+
+
+  <script>
+    var cardText = document.querySelector("#card-text");
+    var button = document.querySelector(".card button");
+
+    // 원래 텍스트
+    var originalText = "열심히 설명하는 선생님";
+
+    button.addEventListener("click", () => {
+      if (cardText.textContent == originalText) {
+      // 텍스트 변경
+      cardText.textContent = "텍스트가 변경되었습니다!";
+      } else {
+      // 원래대로 복구
+      cardText.textContent = originalText;
+      }
+    });
+
+
+
+    // const cardText = document.querySelector(".card-text");
+    // const button = document.querySelector(".card button");
+
+    // button.addEventListener("click", () => {
+    //     cardText.textContent = "텍스트가 변경되었습니다!";
+    // });
+
+
+
+    // document.querySelector(".card .card-text").textContent = "Hello World";
+
+    // "card-text"라는 id값을 가진 요소를 찾아서 변경 
+    // document.getElementById("card-text").innerText = "Hello World";
+  </script>
+
+  <script>
+    let era = 2025;
+    const age = 20;
+
+    // const는 변수 자체를 바꿀 수는 없다, 하지만 변수안의 객체 내용은 바꿀 수 있다.
+
+    const user = { name: "Jason" };
+
+    user.name = "Tom"; // 가능! 객체 안의 값 변경
+    user = {}; // 이건 안됨(변수 자체를 바꾸는 것은 불가)
+
+    console.log(user.name); // "Tom"
+
+    // =======================================================
+
+    for (let i = 1; i <= 5; i++) {
+      console.log(i);
+    }
+
+    1, 2, 3, 4, 5
+
+
+
+    const fruits = ["학교", "영어", "유학"];
+
+    for (let i = 0; i < fruits.length; i++) {
+      console.log(fruits[i]);
+    }
+
+    학교, 영어, 유학
+
+    
+
+    const container = document.getElementById("container");
+
+    for (let i = 1; i <= 3; i++) {
+      container.innerHTML += `<p>문단 ${i}</p>`;
+    }
+
+    문단1, 문단2, 문단3
+    
+
+    const users = [
+      { name: "철수", age: 20 },
+      { name: "영희", age: 22 },
+      { name: "민수", age: 25 }
+    ];
+
+    for (let i = 0; i < users.length; i++) {
+      console.log(`${users[i].name}의 나이는 ${users[i].age}살입니다.`);
+    }
+
+    const person = {
+      name: "jason",
+      sayHello() {
+        console.log("안녕하세요!");
+      }
+    };
+
+    // 화살표 함수로 표현
+    const numbers = [1, 2, 3];
+
+    const result = numbers.map(num => num * 2);
+
+    console.log(result); // [2, 4, 6]
+
+
+    // 일반 함수로 표현
+    const numbers = [1, 2, 3];
+
+    const result = numbers.map(function(num) {
+      return num * 2;
+    });
+
+    console.log(result); // [2, 4, 6]
+
+
+    // 리스트를 화면에 뿌릴때 사용
+    const ship = ["해운1", "해운2", "해운3"];
+
+    return (
+      <ul>
+        {ships.map((ship, i) => (
+          <li key={i}>{ship}</li>
+        ))}
+      </ul>
+    );
+
+    const numbers = [1, 2, 3, 4, 5];
+
+    const result = numbers.filter(num => num > 3);
+
+    console.log(result); // [4, 5]
+
+
+
+    const users = [
+      { id: 1, name: "철수" },
+      { id: 2, name: "영희" },
+    ];
+
+    const user = users.find(u => u.id === 2);
+
+    console.log(user); 
+    // { id: 2, name: "영희" }
+
+
+
+    const animals = ["dog", "cat", "fox"];
+  
+    const upperAnimals = animals.map(a => a.toUpperCase());
+    console.log(upperAnimals);
+    // ["DOG", "CAT", "FOX"]
+
+
+    const job = ["police", "firetighter,", "farmer"]
+    const jobs = job.map(a => a.toUpperCase());
+    console.log(upperJob);
+    // 배열 안의 객체 모두 대문자로 변환됨
+
+
+    const users = [
+      { id: 1, name: "철수" },
+      { id: 2, name: "영희" },
+    ];
+
+    const names = users.map(user => user.name);
+    console.log(names);
+    // ["철수", "영희"]
+
+
+    
+  </script>
+</body>
+</html>
