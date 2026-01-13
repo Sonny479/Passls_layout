@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pass LS 레이아웃</title>
+  <link rel="stylesheet" href="/assets/styles/style_new.css">
+</head>
+<body>
+  <header class="flex-row align-center black-dot height-60">
+    <img src="/assets/images/passls_logo.png" class="padding-inline-20">
+    <ul class="flex-row gap-10 max-width-400">
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+      <li>menu5</li>
+    </ul>
+  </header>
+  <!--Courses-->
+  <main>
+    <section class="flex-row">
+      <aside class="flex-col gap-10 red-dot padding-inline-20 padding-block-10" style="flex: 1;">
+        <strong class="padding-block-10">Pass LS</strong>
+        <ul>
+          <li class="red-dot padding-block-10">menu1</li>
+          <li class="red-dot padding-block-10">menu2</li>
+          <li class="red-dot padding-block-10">menu3</li>
+          <li class="red-dot padding-block-10">menu4</li>
+          <li class="red-dot padding-block-10">menu5</li>
+          <li class="red-dot padding-block-10">menu6</li>
+        </ul>
+      </aside>
+
+      <section class="flex-col gap-20 black-dot padding-block-10 padding-inline-20" style="flex: 5;">
+        <article class="padding-block-10 padding-inline-20 red-dot">
+          <ul class="flex-row gap-10">
+            <li>click1</li>
+            <li>click2</li>
+            <li>click3</li>
+          </ul>
+          <div class="flex-col gap-10 red-dot margin-top-20 padding-block-10 padding-inline-10">
+            <strong>order info</strong>
+            <div class="flex-col gap-10 black-dot">
+              <p>text</p>
+              <p>text</p>
+              <p>text</p>
+              <p>text</p>
+              <input type="text" placeholder="text">
+            </div>
+          </div>
+
+          <div class="flex-row gap-20 margin-top-40">
+            <div class="flex-col red-dot" style="flex: 1;">
+              <strong>payment info</strong>
+              <div class="flex-col gap-10 black-dot">
+                <p>text</p>
+                <p>text</p>
+                <p>text</p>
+              </div>
+            </div>
+
+            <div class="flex-col red-dot" style="flex: 1;">
+              <strong>user info</strong>
+              <div class="flex-col gap-10 black-dot">
+                <p>text</p>
+                <p>text</p>
+                <p>text</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <section class="Card margin-top-20">
+          <div class="DataTable black-dot">
+            <strong class="red-dot">text info</strong>
+            <table class="DataTable__table red-dot">
+              <colgroup>
+                <!-- ✅ 여기만 페이지별로 바뀜 (컬럼폭/개수) -->
+                <col style="width: 90px" />
+                <col style="width: 280px" />
+                <col style="width: 160px" />
+              </colgroup>
+        
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>User / Email</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+        
+              <tbody>
+                <tr>
+                  <td class="mono">W00140</td>
+                  <td>
+                    <div class="UserCell">
+                      <img class="Avatar" src="./assets/images/u1.png" alt="" />
+                      <div>
+                        <div class="UserCell__name">James Kim</div>
+                        <div class="UserCell__sub">james.kim@email.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>action</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="Card margin-top-20">
+          <div class="DataTable black-dot">
+            <strong class="red-dot">text info</strong>
+            <table class="DataTable__table red-dot">
+              <colgroup>
+                <!-- ✅ 여기만 페이지별로 바뀜 (컬럼폭/개수) -->
+                <col style="width: 90px" />
+                <col style="width: 280px" />
+                <col style="width: 160px" />
+                <col style="width: 160px" />
+                <col style="width: 160px" />
+                <col style="width: 120px" />
+              </colgroup>
+        
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>User / Email</th>
+                  <th>Pass Type</th>
+                  <th>Start Date</th>
+                  <th>Expiration Date</th>
+                  <th>Duration</th>
+                </tr>
+              </thead>
+        
+              <tbody>
+                <tr>
+                  <td class="mono">W00140</td>
+                  <td>
+                    <div class="UserCell">
+                      <img class="Avatar" src="./assets/images/u1.png" alt="" />
+                      <div>
+                        <div class="UserCell__name">James Kim</div>
+                        <div class="UserCell__sub">james.kim@email.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Monthly Pass</td>
+                  <td>Apr 25, 2024</td>
+                  <td>May 25, 2024</td>
+                  <td>May 25, 2024</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+  
+  <footer class="flex-row align-center justify-center black-dot height-60">
+    <p>footer text</p>
+  </footer>
+</body>
+</html>
