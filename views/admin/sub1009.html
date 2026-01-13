@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pass LS 레이아웃</title>
+  <link rel="stylesheet" href="/assets/styles/style_new.css">
+</head>
+<body>
+  <header class="flex-row align-center black-dot height-60">
+    <img src="/assets/images/passls_logo.png" class="padding-inline-20">
+    <ul class="flex-row gap-10 max-width-400">
+      <li>menu1</li>
+      <li>menu2</li>
+      <li>menu3</li>
+      <li>menu4</li>
+      <li>menu5</li>
+    </ul>
+  </header>
+  <!--Courses-->
+  <main>
+    <section class="flex-row">
+      <aside class="flex-col gap-10 red-dot padding-inline-20 padding-block-10" style="flex: 1;">
+        <strong class="padding-block-10">Pass LS</strong>
+        <ul>
+          <li class="red-dot padding-block-10">menu1</li>
+          <li class="red-dot padding-block-10">menu2</li>
+          <li class="red-dot padding-block-10">menu3</li>
+          <li class="red-dot padding-block-10">menu4</li>
+          <li class="red-dot padding-block-10">menu5</li>
+          <li class="red-dot padding-block-10">menu6</li>
+        </ul>
+      </aside>
+
+      <section class="flex-col gap-20 black-dot padding-block-10 padding-inline-20" style="flex: 5;">
+        <section class="padding-block-10 padding-inline-20 red-dot">
+          <ul class="flex-row gap-10 padding-block-10">
+            <li>click1</li>
+            <li>click2</li>
+            <li>click3</li>
+            <li>click4</li>
+          </ul>
+          
+          <article class="red-dot">
+            <div class="flex-col black-dot padding-inline-20">
+              <div class="flex-row gap-10 margin-top-20">
+                <p class="width-full max-width-100 height-150 red-dot">img</p>
+                <div class="flex-col gap-10 max-width-800 black-dot padding-block-10">
+                  <p class="width-full max-width-200">name</p>
+                  <p class="width-full max-width-200">text</p>
+                  <p class="width-full max-width-200">text</p>
+                </div>
+              </div>
+              <p class="padding-block-10">text</p>
+            </div>
+          </article>
+
+          <article class="red-dot margin-top-20">
+            <p class="padding-block-10">background color yellow text</p>
+          </article>
+
+          <article class="red-dot margin-top-20">
+            <p class="padding-block-10">text: text</p>
+            <p class="padding-block-10">text: text</p>
+            <p class="padding-block-10">text: text</p>
+            <div class="red-dot padding-block-10">
+              <p>order ID : </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="Card margin-top-20">
+          <div class="DataTable black-dot">
+            <strong>course access</strong>
+            <table class="DataTable__table red-dot">
+              <colgroup>
+                <!-- ✅ 여기만 페이지별로 바뀜 (컬럼폭/개수) -->
+                <col style="width: 90px" />
+                <col style="width: 280px" />
+                <col style="width: 160px" />
+                <col style="width: 160px" />
+              </colgroup>
+              <p class="red-dot padding-block-10 padding-inline-10">text text</p>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>User / Email</th>
+                  <th>Pass Type</th>
+                  <th>Start Date</th>
+                </tr>
+              </thead>
+        
+              <tbody>
+                <tr>
+                  <td class="mono">W00140</td>
+                  <td>
+                    <div class="UserCell">
+                      <div>
+                        <div class="UserCell__name">James Kim</div>
+                        <div class="UserCell__sub">james.kim@email.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Monthly Pass</td>
+                  <td>Apr 25, 2024</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="Card margin-top-20">
+          <div class="DataTable black-dot">
+            <strong>subscription pass log</strong>
+            <table class="DataTable__table red-dot">
+              <colgroup>
+                <!-- ✅ 여기만 페이지별로 바뀜 (컬럼폭/개수) -->
+                <col style="width: 90px" />
+                <col style="width: 280px" />
+                <col style="width: 160px" />
+                <col style="width: 160px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>date</th>
+                  <th>action</th>
+                  <th>actions</th>
+                </tr>
+              </thead>
+        
+              <tbody>
+                <tr>
+                  <td class="mono">W00140</td>
+                  <td>
+                    <div class="UserCell">
+                      <div>
+                        <div class="UserCell__name">apr 25, 2024</div>
+                        <div class="UserCell__sub">(8:35pm)</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Pass</td>
+                  <td>view detail</td>
+                </tr>
+                <tr>
+                  <td class="mono">W00140</td>
+                  <td>
+                    <div class="UserCell">
+                      <div>
+                        <div class="UserCell__name">James Kim</div>
+                        <div class="UserCell__sub">james.kim@email.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Pass</td>
+                  <td>view detail</td>
+                </tr>
+                <tr>
+                  <td class="mono">W00140</td>
+                  <td>
+                    <div class="UserCell">
+                      <div>
+                        <div class="UserCell__name">James Kim</div>
+                        <div class="UserCell__sub">james.kim@email.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Pass</td>
+                  <td>view detail</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="padding-block-10 padding-inline-10 red-dot">pagination 1, 2, 3, 4, 5</p>
+          </div>
+        </section>
+
+        <section class="Card margin-top-20">
+          <div class="DataTable black-dot">
+            <strong>subscription pass log</strong>
+            <table class="DataTable__table red-dot">
+              <colgroup>
+                <!-- ✅ 여기만 페이지별로 바뀜 (컬럼폭/개수) -->
+                <col style="width: 90px" />
+                <col style="width: 280px" />
+                <col style="width: 160px" />
+                <col style="width: 160px" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>date</th>
+                  <th>action</th>
+                  <th>actions</th>
+                </tr>
+              </thead>
+        
+              <tbody>
+                <tr>
+                  <td class="mono">W00140</td>
+                  <td>
+                    <div class="UserCell">
+                      <div>
+                        <div class="UserCell__name">apr 25, 2024</div>
+                        <div class="UserCell__sub">(8:35pm)</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Pass</td>
+                  <td>view detail</td>
+                </tr>
+                <tr>
+                  <td class="mono">W00140</td>
+                  <td>
+                    <div class="UserCell">
+                      <div>
+                        <div class="UserCell__name">James Kim</div>
+                        <div class="UserCell__sub">james.kim@email.com</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Pass</td>
+                  <td>view detail</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+  
+  <footer class="flex-row align-center justify-center black-dot height-60">
+    <p>footer text</p>
+  </footer>
+</body>
+</html>
